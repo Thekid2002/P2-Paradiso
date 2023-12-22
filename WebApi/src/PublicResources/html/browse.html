@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Browse</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <script src="/js/loading.js" defer></script>
+        <script src="/js/header.js" defer></script>
+        <script src="/js/browse.js" defer></script>
+        <link href="/css/browse.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header"></div>
+
+        <div class="center-content container-flex" style="gap: 20px; margin-top: 20px">
+            <select id="privateOrPublic" class="rounded-select" onchange="getBrowse()">
+                <option value="allEvents">All Events</option>
+                <option value="public">Public Events</option>
+                <option value="private">Private Events</option>
+                <option value="invited">Invited events</option>
+            </select>
+            <input onkeyup="getBrowse()" id="search" class="rounded-input" placeholder="Search">
+            <button onclick="getBrowse()" id="searchButton" class="accent-button">Search</button>
+        </div>
+
+        <div class="eventBody" id="eventBody">
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>See more</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <script src="/js/loading.js" defer></script>
+        <script src="/js/fetchScripts.js" defer></script>
+        <link href="/css/seeMore.css" rel="stylesheet">
+    </head>
+    <body onload="getScripts(['/js/seeMore.js', '/js/header.js'])" class="light-grey-background" style="height: 100vh">
+        <div id="header"></div>
+        <div class="flex-column full-width flex-space-between" style="height: 85%">
+            <div class="flex-full-width white-background">
+                <div class="center-content flex-column full-width">
+                    <h1 id="title">Event: </h1>
+                </div>
+                <div id="eventImg" style="height: 40vh" class="flex-full-width center-content event-image">
+                </div>
+                <div class="flex-full-width center-content">
+                    <h2 id="participants">Participants: </h2>
+                </div>
+            </div>
+            <div class="flex-full-width" style="gap: 50px">
+                <div class="flex-column full-width center-content">
+                    <div class="flex-full-width center-content">
+                        <i class="material-icons">schedule</i>
+                        <h2 id="startDateTime">Start: </h2>
+                    </div>
+                    <div class="flex-full-width center-content">
+                        <i class="material-icons">schedule</i>
+                        <h2 id="endDateTime">End: </h2>
+                    </div>
+                </div>
+                <div class="flex-column full-width center-content">
+                    <div class="flex-column full-width">
+                        <h2>Description:</h2>
+                        <h2 id="description"></h2>
+                    </div>
+                </div>
+                <div class="flex-column full-width center-content">
+                    <div class="flex-full-width center-content">
+                        <i class="material-icons">paid</i>
+                        <h2 id="price">Price: </h2>
+                    </div>
+
+                    <div class="flex-full-width center-content">
+                        <i class="material-icons">location_on</i>
+                        <h2 id="location">Location: </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-space-between button-container" id="seeMoreButtons">
+            </div>
+        </div>
+    </body>
+</html>

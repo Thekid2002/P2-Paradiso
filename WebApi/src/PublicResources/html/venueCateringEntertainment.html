@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>See more</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="/css/venueCateringEntertainment.css" rel="stylesheet">
+    <script src="/js/loading.js" defer></script>
+    <script src="/js/fetchScripts.js" defer></script>
+</head>
+<body onload="getScripts(['/js/venueCateringEntertainment.js', '/js/header.js'])" class="light-grey-background" style="height: 100vh">
+    <div id="header"></div>
+    <div class="flex-column" style="gap: 20px">
+        <h1 style="margin: 0">Venues</h1>
+        <div id="venueContainer" class="container-flex highlight-container" style="margin-top: 10px">
+
+        </div>
+
+        <h1 style="margin: 0">Catering</h1>
+        <div id="cateringContainer" class="container-flex highlight-container">
+
+        </div>
+
+        <h1 style="margin: 0">Entertainment</h1>
+        <div id="entertainmentContainer" class="container-flex highlight-container">
+
+        </div>
+        <div class="flex-space-between">
+            <button class="grey-button">Back</button>
+
+            <button onclick="saveVenCatEnt()" class="accent-button">Save</button>
+        </div>
+    </div>
+</body>
+</html>

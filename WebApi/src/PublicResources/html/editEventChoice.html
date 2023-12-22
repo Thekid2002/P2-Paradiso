@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Edit Event Choice</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <script src="/js/loading.js" defer></script>
+        <script src="/js/fetchScripts.js" defer></script>
+        <link href="/css/editEventChoice.css" rel="stylesheet">
+    </head>
+
+    <body onload="getScripts(['/js/header.js', '/js/editEventChoice.js'])">
+        <div id="header"></div>
+
+            <div class="flex-column center-content">
+                <div>
+                    <button class="accent-button" onclick="goToCreateEditEvent()" type="button">
+                        Change Event Data
+                    </button>
+                </div>
+                <div>
+                    <button class="accent-button" onclick="goToCreateSchedule()" type="button">Change Event Schedule</button>
+                </div>
+                <div>
+                    <button class="accent-button" onclick="goToInvites()" type="button">Go to invites</button>
+                </div>
+                <div>
+                    <button class="accent-button" onclick="goToDashboard()" type="button">Go to dashboard</button>
+                </div>
+                <div>
+                    <button class="accent-button" onclick="goToVenueCateringEntertainment()" type="button">Venue/Catering/Entertainment</button>
+                </div>
+                <div>
+                    <button class="primary-button" onclick="window.location.href = '/browse.html'" type="button">
+                        Go Back
+                    </button>
+                </div>
+            </div>
+    </body>
+</html>

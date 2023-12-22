@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Worker</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="/js/loading.js" defer></script>
+    <script src="/js/fetchScripts.js" defer></script>
+</head>
+<body onload="getScripts(['/js/viewSchedule.js', '/js/header.js'])">
+    <div id="header"></div>
+    <div class="center-content container-flex flex-column">
+        <table id="scheduleTable" class="default-table full-width" style="padding-inline: 10%">
+            <tr>
+                <th>Activity</th>
+                <th>Time</th>
+                <th>Complete</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

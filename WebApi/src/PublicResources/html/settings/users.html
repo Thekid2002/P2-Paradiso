@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Users</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <link href="/css/settings.css" rel="stylesheet">
+        <script src="/js/loading.js" defer></script>
+        <script src="/js/fetchScripts.js" defer></script>
+    </head>
+    <body onload="getScripts(['/js/settings/users.js','/js/settingsRouting.js', '/js/header.js'])">
+        <div id="header"></div>
+
+        <div class="container-flex">
+            <div id="routing" class="settings-routing flex-column"></div>
+            <div id="usersContainer" class="flex-column settings-users">
+
+            </div>
+        </div>
+    </body>
+</html>

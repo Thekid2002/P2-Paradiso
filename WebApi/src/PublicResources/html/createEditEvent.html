@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Create edit event</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <script src="/js/loading.js" defer></script>
+        <script src="/js/fetchScripts.js" defer></script>
+        <link href="/css/createEditEvent.css" rel="stylesheet">
+    </head>
+    <body class="light-grey-background" onload="getScripts(['/js/createEditEvent.js','/js/header.js'])">
+        <div id="header"></div>
+
+        <div class="flex-column center-content" style="margin-top: 20px">
+            <form class="container-flex" style="width: 80vw; gap: 20px">
+                <div class="flex-column full-width">
+                    <div class="rounded-input-with-label">
+                        <label>Event title *</label>
+                        <input id="title" placeholder="Adam and Evas wedding" type="text">
+                        <label id="titleError" class="label-error"></label>
+                    </div>
+                    <div class="rounded-input-with-label">
+                        <label>Price per ticket *</label>
+                        <input id="price" placeholder="3000" type="text">
+                        <label id="priceError" class="label-error"></label>
+                    </div>
+                    <div class="rounded-input-with-label">
+                        <label>Address *</label>
+                        <input id="location" placeholder="Baker Street 221B" type="text">
+                        <label id="locationError" class="label-error"></label>
+                    </div>
+                    <div class="rounded-input-with-label">
+                        <label>Start time *</label>
+                        <input id="startDateTime" placeholder="20:00" type="datetime-local">
+                        <label id="startDateTimeError" class="label-error"></label>
+                    </div>
+                    <div class="rounded-input-with-label">
+                        <label>End time</label>
+                        <input id="endDateTime" placeholder="23:00" type="datetime-local">
+                        <label id="endDateTimeError" class="label-error"></label>
+                    </div>
+                </div>
+
+                <div class="flex-column full-width">
+                    <div class="rounded-select-with-label">
+                        <label>Visibility *</label>
+                        <select id="visibility">
+                            <option value="public">Public</option>
+                            <option value="private">Private</option>
+                        </select>
+                        <label id="visibilityError" class="label-error"></label>
+                    </div>
+                    <div class="rounded-input-with-label">
+                        <label>Url to image</label>
+                        <input id="url" placeholder="http://www.eventify.dk/" type="url">
+                    </div>
+                    <div class="rounded-textarea-with-label">
+                        <label>Description</label>
+                        <textarea class="descriptionBox" cols="8" id="description" placeholder="Description" rows="10"
+                                  type="text"></textarea>
+                        <label id="descriptionError" class="label-error"></label>
+                    </div>
+                </div>
+            </form>
+            <div class="flex-space-between button-container" id="createEditEventButtons">
+            </div>
+        </div>
+    </body>
+</html>

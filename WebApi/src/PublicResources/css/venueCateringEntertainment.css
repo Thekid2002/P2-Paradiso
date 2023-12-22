@@ -1,0 +1,51 @@
+﻿.highlight-container{
+    background-color: var(--grey);
+    overflow: auto;
+}
+
+.centered-large-image{
+    min-width: 30vh;
+    max-width: 30vh;
+    min-height: 30vh;
+    max-height: 30vh;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(100%);
+    margin-left: 10px;
+}
+
+.centered-large-image:hover > div >.selected{
+    display: none !important;
+}
+
+.selected{
+    display: flex !important;
+    justify-content: center;
+    font-size: 200px;
+}
+
+.centered-large-image>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-inline: 13px;
+}
+
+.centered-large-image>div>*{
+    display: none;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+}
+
+.centered-large-image:hover>div{
+    backdrop-filter: blur(15px);
+}
+
+.centered-large-image:hover>div>*{
+    display: block;
+}
+

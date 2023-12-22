@@ -1,0 +1,32 @@
+.container {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.column label {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.event-image {
+    height: 21vh;
+    margin-top: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.button-container {
+    height: 100%;
+    gap: 20px;
+    width: 80vw;
+}
+
+.button-container > div {
+    gap: 20px;
+    display: flex;
+}

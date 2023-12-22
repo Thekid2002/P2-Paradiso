@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="/js/authentication/signUp.js" defer></script>
+    <script src="/js/loading.js" defer></script>
+    <link href="/css/authentication.css" rel="stylesheet">
+</head>
+<body class="container-flex-fill">
+<div id="header"></div>
+
+<div class="authenticationForm">
+    <div>
+        <h1 class="large-text">
+            Sign up
+        </h1>
+
+        <form id="signupForm" class="inputs">
+            <div class="dots-container">
+                <div class="dot-container">
+                    <span>Signup</span>
+                    <div class="dot past">
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="dot-container">
+                    <span>Company</span>
+                    <div class="dot past">
+                        <span>2</span>
+                    </div>
+                </div>
+                <div class="dot-container">
+                    <span>Verify</span>
+                    <div class="dot selected">
+                        <span>3</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-input-with-label">
+                <label>Token</label>
+                <input id="token" placeholder="Token" type="text">
+                <label id="tokenError" class="label-error"></label>
+            </div>
+            <div class="rounded-input-with-label">
+                <label>Email</label>
+                <input id="email" placeholder="Email" type="email">
+                <label id="emailError" class="label-error"></label>
+            </div>
+            <div class="rounded-input-with-label">
+                <label>Password</label>
+                <input id="password" placeholder="password" type="password">
+                <label id="passwordError" class="label-error"></label>
+            </div>
+            <div class="flex-full-width flex-space-between">
+                <button class="primary-button" type="button" onclick="goToPreviousPage()">Previous</button>
+                <button class="accent-button" type="button" onclick="verifyUser()">Next</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="flex-space-between action-buttons">
+        <button onclick="window.location.href = '/authentication/forgotPassword.html'">
+            Forgot password
+        </button>
+
+        <button onclick="window.location.href = '/authentication/login.html'">
+            Login
+        </button>
+    </div>
+</div>
+
+<div class="imageWithLogo">
+    <div class="logo">
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.event-image {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.flex-30-width{
+    display: flex;
+    width: 30%;
+}
+
+.justify-content-right-align-center{
+    justify-content: right;
+    align-items: center;
+}

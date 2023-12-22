@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>See more</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="/js/loading.js" defer></script>
+    <script src="/js/fetchScripts.js" defer></script>
+
+    <link href="/css/dashboard.css" rel="stylesheet">
+</head>
+<body onload="getScripts(['/js/header.js', '/js/dashboard.js'])">
+    <div id="header"></div>
+    <div class="flex-column full-width flex-space-between" style="height: 85%">
+        <div class="flex-full-width white-background">
+            <div class="flex-full-width white-background"></div>
+            <div id="eventImg" style="height: 35vh" class="center-content event-image">
+            </div>
+            <div class="flex-full-width white-background"></div>
+        </div>
+        <div class="flex-full-width light-grey-background">
+            <div class="center-content flex-column full-width">
+                <h1 id="eventTitle">Event: </h1>
+            </div>
+            <div class="flex-full-width center-content">
+                <h2 id="participants">All Participants: </h2>
+            </div>
+        </div>
+        <div class="container-flex light-grey-background" style="gap: 50px" readonly>
+            <div class="flex-column full-width center-content">
+                <div style="padding-left: 40px" class="flex-column full-width">
+                    <div class="full-width flex-space-between">
+                        <div>
+                            <h2 id="price">Event price: </h2>
+                        </div>
+                        <div>
+                            <h2 id="income">Total income: </h2>
+                        </div>
+                    </div>
+                    <div class="full-width flex-space-between">
+                        <div>
+                            <h2 id="venue">Event venue: </h2>
+                        </div>
+                        <div>
+                            <h2 id="venuePrice">Price: </h2>
+                        </div>
+                    </div>
+                    <div class="full-width flex-space-between">
+                        <div>
+                            <h2 id="catering">Event catering: </h2>
+                        </div>
+                        <div>
+                            <h2 id="cateringPrice">Price: </h2>
+                        </div>
+                    </div>
+                    <div class="full-width flex-space-between">
+                        <div>
+                            <h2 id="entertainment">Event entertainment: </h2>
+                        </div>
+                        <div>
+                            <h2 id="entertainmentPrice">Price: </h2>
+                        </div>
+                    </div>
+                    <div class="full-width flex-space-between">
+                        <div>
+                            <h2>Total: </h2>
+                        </div>
+                        <div>
+                            <h2 id="total"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-column full-width center-content">
+                <table id="participantTable" class="default-table full-width" style="padding-inline: 10%">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="flex-space-between button-container" id="seeMoreButtons">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.settings-buttons {
+    height: 60px;
+    font-size: 20px;
+    background-color: var(--white);
+}
+
+.settings-routing {
+    margin-left: 1vh;
+    gap:1vh;
+    min-width: 30%;
+    width: 30%;
+    padding-top: 1vh;
+}
+
+.settings-user-container{
+    padding: 2vh;
+    border: solid 2px var(--black);
+}
+
+.settings-user-container>div{
+    gap: 2vh;
+}
+
+.settings-users{
+    width: 70%;
+    padding: 2vh;
+    gap: 6vh;
+}
+
+.settings-users>div>div {
+    justify-content: space-between;
+    gap: 2vh;
+}

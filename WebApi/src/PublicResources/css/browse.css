@@ -1,0 +1,82 @@
+.eventBody {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.eventLine {
+    background-color: var(--lightGrey);
+    display: flex;
+    width: 100%;
+}
+
+.eventLine > .eventImg {
+    height: 50vh;
+    width: 50vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.eventDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    width: 50vw;
+}
+
+.eventDescription > h2 {
+    margin-bottom: 0;
+}
+
+.eventData {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eventButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.eventButtons > button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+.seeMoreButton {
+    background-color: var(--blue);
+}
+
+.seeMoreButton:hover {
+    background-color: var(--lightBlue);
+}
+
+.participateButton {
+    background: linear-gradient(90deg, var(--lightPink), var(--lightPink), var(--blue), var(--blue), var(--lightPink), var(--lightPink));
+    background-size: 700% 100%;
+}
+
+.participateButton:hover {
+    animation: participateGradiant 2s linear infinite;
+}
+
+
+@keyframes participateGradiant {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}

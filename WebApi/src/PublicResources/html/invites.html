@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invites</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="/js/loading.js" defer></script>
+    <script src="/js/fetchScripts.js" defer></script>
+    <script src="" defer></script>
+    <link href="/css/editEventChoice.css" rel="stylesheet">
+</head>
+<body onload="getScripts(['/js/header.js', '/js/invites.js'])">
+    <div id="header"></div>
+    <div class="center-content container-flex flex-column">
+        <table id="inviteesTable" class="default-table full-width" style="padding-inline: 10%">
+            <tr>
+                <th>UserID</th>
+                <th>Email</th>
+                <th>Participates</th>
+                <th>Signed up</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+        <div style="gap: 10px" class="center-content container-flex">
+            <div style="width: 40vw"  class="rounded-input-with-label">
+                <label>Email</label>
+                <input id="email" type="text">
+                <label class="label-error" id="emailError"></label>
+            </div>
+            <button class="primary-button" onclick="addRow()">Invite</button>
+        </div>
+    </div>
+</body>
+</html>
